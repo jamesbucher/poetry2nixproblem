@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "trivial"
+version = "0.1.0"
+description = "A simple wrapper for the oci-cli"
+authors = ["jabucher <james.bucher@oracle.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+oci = "^2.75.1"
+oci-cli = "^3.11.1"
+requests = {extras = ["socks"], version = "^2.28.1"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
